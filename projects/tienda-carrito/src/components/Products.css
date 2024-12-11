@@ -1,0 +1,71 @@
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+            minmax(200px,
+                1fr));
+    gap: 1rem;
+}
+
+.products li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    background: #111;
+    color: #fff;
+    padding: 1rem;
+}
+
+.products h3 {
+    margin: 0;
+}
+
+.products span {
+    font-size: 1rem;
+    opacity: .9;
+}
+
+.products img {
+    border-radius: 4px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+    object-fit: cover;
+    background: #fff;
+}
+.product-buttons {
+    display: flex; /* Coloca los botones en fila */
+    flex-direction: column; /* Coloca los botones uno debajo del otro */
+    align-items: center; /* Centra horizontalmente */
+    gap: 12px; /* Espaciado entre los botones */
+    margin-top: 10px; /* Separación superior */
+}
+.is-incart {
+    background-color: red;
+    transition: all .6s ease;
+}
+.isnot-incart{
+    background-color: #242424;
+    transition: all .6s ease;
+}
+.details-button {
+    padding: 10px 14px;
+    font-size: 14px;
+    background-color: #242424; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.details-button:hover {
+    background-color: #4d4c4c;
+}
